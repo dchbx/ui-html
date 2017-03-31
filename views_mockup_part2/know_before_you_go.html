@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Enroll App</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/colors.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="darkblue">Know Before You Go</h1>
+    <p>Here is what you need to know before you proceed. When you've finished, select CONTINUE.</p>
+    <p class="memo">* = required field</p>
+
+    <div id="know_before_you_go" class="focus_effect module">
+
+      <div class="row row-form-wrapper no-buffer">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="margin-top: 10px">
+          <img src="../images/landing-resources_grey_revise.png" alt=" " style="width: 80px; height: 60px; margin: 45px;">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="margin-top: 10px">
+          <span class="span-text"><h1 class="darkblue">Gather Income and Coverage Info</h1>
+            <p>You will need detailed information about everyone's income and any other health coverage that anyone in your household may have access to. <br> <br>
+              Depending on how much into you have to enter, it may take you betweeen 10-20 minutes to fill in this information. You can always save your work for later. Simply select SAVE & EXIT.</p>
+            </span>
+          </div>
+
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $('.field_with_errors > *').unwrap();
+            Freebies.floatlabels();
+          });
+        </script>
+
+        <script>
+          $(document).on('ready page:load', function () {
+            Freebies.allFreebies();
+          });
+        </script>
+
+      </body>
+      </html>

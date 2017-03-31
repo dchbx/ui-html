@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Enroll App</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/colors.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="darkblue">Job Income</h1>
+    <p>Please complete all tax info for <strong> Mary</strong>. To go to a different person, select ‘Back to All Applicants’. When you’ve finished, select CONTINUE.</p>
+    <p class="memo">* = required field</p>
+
+
+    <div id="job_income_2" class="focus_effect module">
+
+      <div id="person_expect_income" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+          <span class="span-text">Does this person expect to have any income from a job in 2017? *</span>
+        </div>
+
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" " required=" " type="radio" value=" " name=" ">
+          <label class="radio-label" ><span>Yes</span></label>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" "  type="radio" value=" " name=" ">
+          <label class="radio-label" for=" "><span>No</span></label>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 10px">
+          | &nbsp <a href=""> Not Sure? </a>
+        </div>
+      </div>
+      <br>
+
+      <div id="kind_job_income" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+          <span class="span-text">What Kind of job income is this?*</span>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+          <select>
+            <option>Salaries & Wages</option>
+            <option> ABCD</option>
+            <option>POST</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div id = "amount_often_from_to" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative">
+            <label for=" " class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">AMOUNT *</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="AMOUNT *" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+          <div class="selectric-labeled">
+            <span><strong>HOW OFTEN</strong></span>
+            <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+              <div class="selectric-hide-select">
+                <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1"><option value="" class="interaction-choice-control-person-name-sfx-0">Select One</option>
+                  <option value="Jr." class="interaction-choice-control-person-name-sfx-1">Jr.</option>
+                  <option value="Sr." class="interaction-choice-control-person-name-sfx-2">Sr.</option>
+                  <option value="II" class="interaction-choice-control-person-name-sfx-3">II</option>
+                  <option value="III" class="interaction-choice-control-person-name-sfx-4">III</option>
+                  <option value="IV" class="interaction-choice-control-person-name-sfx-5">IV</option>
+                  <option value="V" class="interaction-choice-control-person-name-sfx-6">V</option>
+                </select>
+              </div>
+            </div>    
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">FROM *</label><input class="floatlabel form-control interaction-field-control" placeholder="FROM" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">TO</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="TO" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+
+      </div>
+
+
+
+      <div id="employer_name_phone" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER NAME *</label><input class="floatlabel form-control interaction-field-control" placeholder="EMPLOYER NAME *" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER PHONE</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="EMPLOYER PHONE" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+      </div>
+
+      <div class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER ADDRESS LINE 1</label><input class="floatlabel form-control interaction-field-control" placeholder="EMPLOYER ADDRESS LINE 1" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER ADDRESS LINE 2</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="EMPLOYER ADDRESS LINE 2" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+      </div>
+
+      <div class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER ADDRESS LINE 1</label><input class="floatlabel form-control interaction-field-control" placeholder="EMPLOYER ADDRESS LINE 1" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">EMPLOYER ADDRESS LINE 2</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="EMPLOYER ADDRESS LINE 2" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+      </div>
+
+
+      <div id="city_state_zip" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">CITY </label><input class="floatlabel form-control interaction-field-control" placeholder="CITY *" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" style="margin-top: 10px">
+          <select>
+            <option>Choose State</option>
+            <option> ABCD</option>
+            <option>POST</option>
+          </select>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+          <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">ZIP </label><input class="floatlabel form-control interaction-field-control" placeholder="ZIP *" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+        </div>
+
+
+      </div>
+    </div>
+    <br>
+
+    <div id="kind_job_income" class="row row-form-wrapper no-buffer">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+        <span class="span-text">What Kind of job income is this?*</span>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+        <select>
+          <option>Self Employment</option>
+          <option> ABCD</option>
+          <option>POST</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="amount_often_from_to" class="row row-form-wrapper no-buffer">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+        <div class="floatlabel-wrapper" style="position:relative">
+          <label for=" " class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">AMOUNT *</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="AMOUNT *" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;">
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+        <div class="selectric-labeled">
+          <span><strong>HOW OFTEN</strong></span>
+          <div class="selectric-wrapper selectric-interaction-choice-control-person-name-sfx">
+            <div class="selectric-hide-select">
+              <select name="person[name_sfx]" id="person_name_sfx" class="interaction-choice-control-person-name-sfx" tabindex="-1"><option value="" class=" ">Select One</option>
+                <option value="Jr." class=" ">Jr.</option>
+                <option value="Sr." class=" ">Sr.</option>
+                <option value="II" class=" ">II</option>
+                <option value="III" class=" ">III</option>
+                <option value="IV" class=" ">IV</option>
+                <option value="V" class=" ">V</option>
+              </select>
+            </div>
+          </div>    
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+        <div class="floatlabel-wrapper" style="position:relative"><label for=" " class="label-floatlabel  " style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">FROM *</label><input class="floatlabel form-control interaction-field-control" placeholder="FROM" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 form-group form-group-lg no-pd">
+        <div class="floatlabel-wrapper" style="position:relative"><label for="person_last_name" class="label-floatlabel" style="position: absolute; top: 0px; left: 8px; display: none; opacity: 0; font-size: 11px; font-weight: bold; color: rgb(131, 135, 128); transition: all 0.1s ease-in-out;">TO</label><input class="required floatlabel form-control interaction-field-control" required="required" placeholder="TO" type="text" name=" " id=" " style="transition: all 0.1s ease-in-out;"></div>
+      </div>
+
+    </div>
+    <br>
+    <div class="row row-form-wrapper no-buffer">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px">
+        <a href=" "> <img src="../images/add_circle.png" alt=" " style="width: 15px; height: 15px;"> Add Additional Job Income </a>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.field_with_errors > *').unwrap();
+    Freebies.floatlabels();
+  });
+</script>
+
+<script>
+  $(document).on('ready page:load', function () {
+    Freebies.allFreebies();
+  });
+</script>
+
+</body>
+</html>

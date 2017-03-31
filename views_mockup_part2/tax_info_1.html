@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Enroll App</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/colors.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="darkblue">Tax Info</h1>
+    <p>Please complete all tax info for <strong>Mary</strong>. To go to a different person, Select 'Back to All Applciations'. When you've finished, select CONTINUE.</p>
+    <p class="memo">* = required field</p>
+
+
+    <div id="tax_info_1" class="focus_effect module">
+
+      <div id="person_file_tax" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+          <span class="span-text">Will this person file taxes for 2017? *</span>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" " required=" " type="radio" value=" " name=" ">
+          <label class="radio-label" ><span>Yes</span></label>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" "  type="radio" value=" " name=" ">
+          <label class="radio-label" for=" "><span>No</span></label>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 10px">
+          | &nbsp <a href=""> Not Sure? </a>
+        </div>
+      </div>
+      <br>
+
+      <div id="person_claim_tax" class="row row-form-wrapper no-buffer">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin-top: 10px">
+          <span class="span-text">Will this person be claimed as somebody else’s tax dependent for 2017? *</span>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" " required=" " type="radio" value=" " name=" ">
+          <label class="radio-label" for=" "><span>Yes</span></label>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="margin-top: 10px">
+          <input class=" " id=" " required="required" type="radio" value=" " name=" ">
+          <label class="radio-label" for=" "><span>No</span></label>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin-top: 10px">
+          | &nbsp <a href=""> Not Sure? </a>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <span class="glyphicon glyphicon-triangle-left  darkblue" aria-hidden="true">
+        <a href="http://www.xyz.com">BACK TO ALL APPLICANTS</a>
+      </span>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.field_with_errors > *').unwrap();
+        Freebies.floatlabels();
+      });
+    </script>
+
+    <script>
+      $(document).on('ready page:load', function () {
+        Freebies.allFreebies();
+      });
+    </script>
+
+  </body>
+  </html>
